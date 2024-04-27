@@ -16,6 +16,19 @@ phase0
     setup
     cli
     expressions
+        intro
+            1 + 1
+        expressions
+        constant
+        assignment
+        Variable 
+        js variables
+        javaScript Data Types
+        strings
+        boolean
+        comparisons
+        logical
+        programmong with-expresion
     statements
     bundling
     data structures
