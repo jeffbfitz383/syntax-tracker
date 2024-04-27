@@ -718,8 +718,6 @@ phase0
             do {
             console.log(`I will execute once`);
             } while (false);
-
-
     bundling
         intro
         testing
@@ -922,12 +920,95 @@ phase0
 
 
     data structures
+
+        intro
+        arrays
+        array-method
+        array-lab
+        objects
+        mod-objects
+        object-lab
+        debugging in node
+        stack-to
+        looping lab
+        object interpolation(interaction)
+        traversing nested objects
+
+
+
     HTML
+
+        
+        A Quick Tour Of The Web
+        Welcome to HTML
+        Files and File Types
+        Experiencing HTML Lab
+        Document Structure Continued
+        Your First HTML Tag Lab
+        Nested HTML Tags And Attributes
+        Create a Link Using the href Attribute
+        HTML Elements
+        HTML Lists
+        HTML Tables
+        HTML Images
+        HTML Validation
+        Expanding Your HTML Vocabulary via MDN
+        Researching HTML Elements
+        HTML Issue Bot 9000
+        Using Your Browser's Developer Tools
+        HTML Album Cover
+        BONUS: Riyadh Blog
+
+
     CSS
+
+        
+        Intro to CSS
+        Introduction to CSS Lab
+        CSS Fundamentals
+        CSS Fundamentals Lab
+        CSS Validation Lab: Issue Bot 9000
+        My Little Rainbow
+        BONUS: CSS Kitten Wheelbarrow
+        BONUS: CSS Graffiti Override Lab
+
+
     DOM
+
+        
+        Introduction to the DOM
+        DOM Editing Lab
+        Changing The DOM with DevTools and JavaScript
+        The DOM Is a Tree
+        JavaScript Query Selector Methods
+        Creating and Inserting DOM Nodes Lab
+        Survey - Manipulating the DOM
+
     Events
+
+    
+        JavaScript Events
+        JavaScript Event Listeners Lab
+        Moving Things with JavaScript by Acting on Events
+
+
     Git
+
+        
+        Intro to Version Control
+        Git Basics
+        Getting Code with Git
+        Pushing Code with Git
+
     Project
+
+        
+        Software Engineering Prep Final Project Setup Part I: Setting Up Your Repo
+        Software Engineering Prep Final Project Setup Part II: Hosting a Website on GitHub Pages
+        Project: Build a Personal Website
+
+
+
 phase1
 phase2
 phase3
