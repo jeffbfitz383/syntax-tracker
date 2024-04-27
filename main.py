@@ -425,13 +425,502 @@ phase0
             const problem = 99;
             const luckyNumber = first > second ? (problem - 1) / 2 : problem / 3;
             luckyNumber; //=> ??? (Test it out yourself!)
-
-
-
-            
-
     statements
+        intro
+
+            let favoriteNumber = 32;
+            if (favoriteNumber >= 10) { // evaluating favoriteNumber >= 10 returns true
+            favoriteNumber = favoriteNumber + 10
+            } 
+            console.log(favoriteNumber);
+
+            let favoriteNumber = 0;
+            while (favoriteNumber < 10) {
+            favoriteNumber = favoriteNumber + 1;
+            }
+            console.log(favoriteNumber);
+        comment
+
+            // From the Three Dog Night song: "Joy to the World (Jeremiah was a Bullfrog)"
+            const lineOne = "Joy to the world";
+            const lineTwo = "All the boys and girls";
+            const lineThree = "Joy to the fishes in the deep blue sea";
+            const lineFour = "Joy to you and me";
+
+            // The '\n' inserts a new line into the string
+            const chorus = `${lineOne}\n${lineTwo}\n${lineThree}\n${lineFour}`;
+
+            const lineOne = "Joy to the world";
+            const lineTwo = "All the boys and girls";
+            const lineThree = "Joy to the fishes in the deep blue sea";
+            const lineFour = "Joy to you and me";
+
+            const chorus = `${lineOne}\n${lineTwo}\n${lineThree}\n${lineFour}`;
+
+            const lineOne = "Joy to the world";
+            const lineTwo = "All the boys and girls";
+            //const lineThree = "Joy to the fishes in the deep blue sea";
+            const lineFour = "Joy to you and me";
+
+            // const chorus = `${lineOne}\n${lineTwo}\n${lineThree}\n${lineFour}`;
+            const chorus = `${lineOne}\n${lineTwo}\n${lineFour}`;
+
+            const lineOne = "Joy to the world";
+            const lineTwo = "All the boys and girls";
+            const lineThree = "Joy to the fishes in the deep blue sea"; 
+            */
+            const lineFour = "Joy to you and me";
+
+            lineFour; // => "Joy to you and me"
+        selection with conditionals 
+
+            const name = "Alice";
+            let greeting;
+
+            if (name === "Alice") {
+            greeting = "Hello, Alice!";
+            } else if (name === "The White Rabbit") {
+            greeting = "Don't be late, White Rabbit";
+            } else if (name === "The Mad Hatter") {
+            greeting = "Welcome to the tea party, Mad Hatter";
+            } else if (name === "The Queen of Hearts") {
+            greeting = "Please don't chop off my head!";
+            } else {
+            greeting = "Whoooo are you?";
+            }
+
+            greeting;
+            //=> "Hello, Alice!"
+
+            const name = "Alice";
+            let greeting;
+
+            switch (name) {
+            case "Alice":
+                greeting = "Hello, Alice!";
+                break;
+            case "The White Rabbit":
+                greeting = "Don't be late, White Rabbit";
+                break;
+            case "The Mad Hatter":
+                greeting = "Welcome to the tea party, Mad Hatter";
+                break;
+            case "The Queen of Hearts":
+                greeting = "Please don't chop off my head!";
+                break;
+            default:
+                greeting = "Whoooo are you?";
+            }
+
+            console.log(greeting);
+
+            let characterType;
+
+            const name = "Grumpy";
+          
+
+            switch (name) {
+            case "Sleepy":
+            case "Sneezy":
+            case "Happy":
+            case "Grumpy":
+            case "Bashful":
+            case "Dopey":
+            case "Doc":
+                characterType = "dwarf";
+                break;
+            case "Handsome Prince":
+                characterType = "hero";
+                break;
+            case "Evil Queen":
+                characterType = "villain";
+                break;
+            case "Snow White":
+                characterType = "heroine";
+                break;
+            default:
+                characterType = "minor character";
+            }
+
+            console.log(characterType);
+
+            const age = 20;
+            let isAdult, canWork, canEnlist, canDrink;
+
+            if (age >= 21) {
+            isAdult = true;
+            canWork = true;
+            canEnlist = true;
+            canDrink = true;
+            } else if (age >= 18) {
+            isAdult = true;
+            canWork = true;
+            canEnlist = true;
+            } else if (age >= 16) {
+            canWork = true;
+            }
+            // => true
+
+            isAdult;
+            // => true
+
+            canWork;
+            // => true
+
+            canEnlist;
+            // => true
+
+            canDrink;
+            // => undefined
+
+            const age = 21;
+            let isAdult, canWork, canEnlist, canDrink;
+
+            switch (true) {
+            case age >= 21:
+                canDrink = true;
+            case age >= 18:
+                isAdult = true;
+                canEnlist = true;
+            case age >= 16:
+                canWork = true;
+            }
+            console.log(canWork);
+            console.log(canEnlist);
+            console.log(isAdult);
+            console.log(canDrink);
+        logging
+
+            console.log("Hello, world!");
+            console.log("one", "two", "three");
+            console.log("I must have logged", 1000, "times today.");
+
+            const name = "Spinach the Shiba";
+            console.log("Hello,", name);
+
+            const age = 20;
+
+            let isAdult=false, canWork=false, canEnlist=false, canDrink=false;
+
+            if (age >= 21) {
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            canDrink = true;
+            } else if (age >= 18) {
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            } else if (age >= 16) {
+            canWork = true;
+            }
+
+            console.log(canWork, canEnlist, isAdult, canDrink);
+            true false false false
+
+            console.log(
+            "Age:",
+            age,
+            "Can work:",
+            canWork,
+            "Can enlist:",
+            canEnlist,
+            "Is a legal adult:",
+            isAdult,
+            "Can drink:",
+            canDrink
+            );
+
+            console.log(
+            `Age: ${age}, Can work: ${canWork}, Can enlist: ${canEnlist}, Is a legal adult: ${isAdult}, Can drink: ${canDrink}`
+            );
+
+            const age = 18;
+
+            let isAdult=false, canWork=false, canEnlist=false, canDrink=false;
+
+            if (age >= 21) {
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            canDrink = true;
+            } else if (age > 18) {
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            } else if (age >= 16) {
+            canWork = true;
+            }
+
+            console.log(`Age: ${age}\nCan work: ${canWork}\nCan enlist: ${canEnlist}\nIs a legal adult: ${isAdult}\nCan drink: ${canDrink}`);
+
+            const age = 18;
+
+            let isAdult=false, canWork=false, canEnlist=false, canDrink=false;
+
+            if (age >= 21) {
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            canDrink = true;
+            } else if (age > 18) {
+            console.log("The condition returned true")
+            canWork = true;
+            canEnlist = true;
+            isAdult = true;
+            } else if (age >= 16) {
+            canWork = true;
+            }
+
+            console.log(`Age: ${age}\nCan work: ${canWork}\nCan enlist: ${canEnlist}\nIs a legal adult: ${isAdult}\nCan drink: ${canDrink}`);
+            
+            if (condition1) {
+            console.log("Condition 1 returned true");
+            } else if (condition2) {
+            console.log("Condition 2 returned true");
+        while
+
+            while (condition expression) {
+            // stuff to do
+            }
+
+            while (true) {
+            console.log("say this forever...");
+            }
+
+            while (-1) {
+            // -1 is truthy....
+            console.log("say this forever...");
+            }
+
+            while (null) {
+            console.log("I will never run");
+            }
+
+            let count = 0; // Initialize a counter variable; note that we need to use `let` here
+            while (count < 3) {
+            //A Boolean expression that uses the counter to decide whether to keep looping
+            console.log(`I am the ${count}, I love to count!`); // The work the loop does
+            count = count + 1; // Update the counter variable; this keeps track of how many times the loop has executed
+            }
+
+            count = count + 1;
+
+            // take the value of count, add 1 to it and then assign that result to count
+            count += 1;
+
+            let count = 0; 
+            while (count < 3) { 
+            console.log(`I am the ${count}, I love to count!`); 
+            count++; 
+            }
+
+            do {
+            console.log(`I will execute once`);
+            } while (false);
+
+
     bundling
+        intro
+        testing
+
+            const name = "Joe";
+            const height = 74;
+            const message = `${name} is ${height} inches tall`;
+
+            module.exports = { name, height, message };
+
+            const message = `${name} is ${height} inches tall`;
+            node index.js
+
+            const { name, height, message } = require("../index.js");
+
+            describe("Name", () => {
+            it('returns "Susan"', () => {
+                expect(name).toEqual("Susan");
+            });
+            });
+
+            describe("Height", () => {
+            it("is less than 40", () => {
+                expect(height).toBeLessThan(40);
+            });
+            });
+
+            describe("Message", () => {
+            it("gives the name and height", () => {
+                expect(message).toInclude(name);
+                expect(message).toInclude(height);
+            });
+            });
+        intro-functions
+
+            function sayHello() {
+            console.log("Hello!");
+            }
+
+            sayHello();
+
+            function sayHelloToGuadalupe() {
+            console.log("Hello, Guadalupe!");
+            }
+
+            function sayHelloToLiz() {
+            console.log("Hello, Liz!");
+            }
+
+            function sayHelloToSamip() {
+            console.log("Hello, Samip!");
+            }
+
+            sayHelloToGuadalupe();
+            sayHelloToLiz();
+            sayHelloToSamip();
+
+            function doSomething(thing) {
+            console.log(thing);
+            }
+
+            doSomething("anything"); // passing the argument 'anything' into our function
+
+            function sayHelloTo(firstName) {
+            console.log(`Hello, ${firstName}!`);
+            }
+
+            sayHelloTo("Guadalupe"); // "Hello, Guadalupe!"
+            sayHelloTo("Jane"); // "Hello, Jane!"
+            sayHelloTo("R2-D2"); // "Hello, R2-D2!"
+            sayHelloTo(1); // "Hello, 1!"
+
+            // ^ Note that in the above, JavaScript coerces the number 1 to the string "1"
+
+            function say(greeting, firstName) {
+            console.log(`${greeting}, ${firstName}!`);
+            }
+
+            say("Julio", "hello");
+
+            function say(greeting, firstName) {
+            console.log("firstName: ", firstName);
+            console.log("greeting: ", greeting);
+            console.log(`${greeting}, ${firstName}!`);
+            }
+
+            function add(x, y) {
+            return x + y;
+            }
+
+            console.log(add(1, 2));
+
+            function say(greeting, firstName) {
+            return `${greeting}, ${firstName}!`;
+            }
+
+            function say(greeting, firstName) {
+            console.log(`${greeting}, ${firstName}!`);
+            }
+
+            function add(x, y) {
+            x + y;
+            }
+
+            console.log(add(1, 2));
+
+            const sum = add(num1, num2);
+            const message = `The sum of your numbers is: ${sum}.`;
+
+            const message = `The sum of your numbers is: ${add(num1, num2)}.`;
+
+            function say(greeting, firstName) {
+            return `${greeting}, ${firstName}!`;
+            console.log("I was called!");
+            }
+
+            console.log(say("Howdy", "partner"));
+
+            function say(greeting, firstName) {
+            console.log("I was called!");
+            return `${greeting}, ${firstName}!`;
+            }
+        functions-lab
+
+            function shout(string) {
+            return string.toUpperCase()
+            }
+
+            function whisper(string) {
+            return string.toLowerCase()
+            }
+
+            function logShout(string) {
+            console.log(string.toUpperCase())
+            }
+
+            function logWhisper(string) {
+            console.log(string.toLowerCase())
+            }
+
+            function sayHiToHeadphonedRoommate(string) {
+            if (string.toLowerCase() === string) {
+                return "I can't hear you!"
+            }
+
+            if (string.toUpperCase() === string) {
+                return "YES INDEED!"
+            }
+
+            if (string === "Let's have dinner together!") {
+                return "I would love to!"
+            }
+            }
+        parameters-lab
+
+            function introduction(name) {
+            return `Hi, my name is ${name}.`;
+            }
+
+            function introductionWithLanguage(name, language) {
+            return `Hi, my name is ${name} and I am learning to program in ${language}.`;
+            }
+
+            function introductionWithLanguageOptional(name, language = "JavaScript") {
+            return `Hi, my name is ${name} and I am learning to program in ${language}.`;
+            }
+                    calculator
+        calculator
+            function add(a,b) {
+            return a + b
+            }
+
+            function subtract(a,b) {
+            return a - b
+            }
+
+            function divide(a,b) {
+            return a / b
+            }
+
+            function multiply(a,b) {
+            return a * b
+            }
+
+            function increment(n) {
+            return n += 1
+            }
+
+            function decrement(n) {
+            return n -= 1
+            }
+
+            function makeInt(string) {
+            return parseInt(string, 10)
+            }
+
+            function preserveDecimal(string) {
+            return parseFloat(string)
+            }
+
+
     data structures
     HTML
     CSS
