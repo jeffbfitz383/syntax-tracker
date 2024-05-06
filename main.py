@@ -922,8 +922,227 @@ phase0
     data structures
 
         intro
-        arrays
+            const theBeatles = [
+            "John Lennon",
+            "Paul McCartney",
+            "Ringo Starr",
+            "George Harrison",
+            ];
+
+            const englishBandsByCity = {
+                liverpool: "The Beatles",
+                manchester: "The Smiths",
+                coventry: "Delia Derbyshire and the BBC Radiophonic Band",
+                london: "Ziggy Stardust and the Spiders from Mars",
+                };
+
+            const englishMusicByCity = {
+            manchester: [
+                {
+                bandName: "The Smiths",
+                memberNames: ["Morrissey", "Johnny", "Andy", "Mike"],
+                },
+                {
+                bandName: "Joy Division",
+                memberNames: ["Peter", "Stephen", "Bernard", "Ian"],
+                },
+            ],
+
+            };
+
+            englishMusicByCity["manchester"][0]["bandName"]; //=> "The Smiths"
+                englishMusicByCity["manchester"][0]["memberNames"]; //=> ["Morrissey", "Johnny", "Andy", "Mike"]
+
+                console.log(
+                `There were ${englishMusicByCity["manchester"][0]["memberNames"].length} members in ${englishMusicByCity["manchester"][0]["bandName"]}`
+                );
+                //=> "There were 4 members in The Smiths"
+                        arrays
         array-method
+            const firstNumber = 32;
+            const secondNumber = 9;
+            const thirdNumber = 14;
+            const fourthNumber = 33;
+            const fifthNumber = 48;
+            const powerBall = 5;
+
+            const firstNumber = 32;
+            const secondNumber = 9;
+            const thirdNumber = 14;
+            const fourthNumber = 33;
+            const fifthNumber = 48;
+            const powerBall = 5;
+
+            function logWinningNumbers(first, second, third, fourth, fifth, power) {
+            console.log("Winning numbers:", first, second, third, fourth, fifth, power);
+            }
+
+            logWinningNumbers(
+            firstNumber,
+            secondNumber,
+            thirdNumber,
+            fourthNumber,
+            fifthNumber,
+            powerBall
+            );
+            // LOG: Winning numbers: 32 9 14 33 48 5
+            // => undefined
+
+            ["This", "is", "an", "array", "of", "strings."];
+            // => ["This", "is", "an", "array", "of", "strings."]
+
+            ["Hello, world!", 42, null, NaN];
+            // => ["Hello, world!", 42, null, NaN]
+
+            const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
+
+            const flowers = ["Rose", "Tulip", "Orchid", "Lily"];
+
+            const myArray = ["This", "array", "has", 5, "elements"];
+
+            myArray.length;
+            // => 5
+
+            const winningNumbers = [32, 9, 14, 33, 48, 5];
+
+            function logWinningNumbers(numbers) {
+            console.log("Winning numbers:", numbers);
+            }
+
+            logWinningNumbers(winningNumbers);
+            // LOG: Winning numbers: [32, 9, 14, 33, 48, 5]
+            // => undefined
+
+            const winningNumbers = [32, 9, 14, 33, 48, 5];
+            // => undefined
+
+            winningNumbers[0];
+            // => 32
+
+            winningNumbers[3];
+            // => 33
+
+            const alphabet = [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+            ];
+            // => undefined
+
+            alphabet.length;
+            // => 26
+
+            alphabet[alphabet.length - 1];
+            // => "z"
+
+            const planets = [
+            "Mercury",
+            "Venus",
+            "Earth",
+            "Mars",
+            "Juptier",
+            "Saturn",
+            "Uranus",
+            "Neptune",
+            ];
+            //=> undefined
+
+            planets[4] = "Jupiter";
+            //=> "Jupiter"
+
+            planets;
+            //=> ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+            planets = ["new", "array"];
+            //=> Uncaught TypeError: Assignment to constant variable.
+
+            const egregiouslyNestedArray = [
+            "How",
+            ["deep", ["can", ["we", ["go", ["?"], "Pretty"], "dang"], "deep,"], "it"],
+            "seems.",
+            ];
+
+            egregiouslyNestedArray[0];
+            //=> 'How'
+
+            egregiouslyNestedArray[1];
+            //=> [ 'deep', [ 'can', [ 'we', [Array], 'dang' ], 'deep,' ], 'it' ]
+
+            egregiouslyNestedArray[2];
+            //=> 'seems.'
+            egregiouslyNestedArray[1][0];
+            //=> 'deep'
+
+            egregiouslyNestedArray[1][1];
+            //=> [ 'can', [ 'we', [ 'go', [Array], 'Pretty' ], 'dang' ], 'deep,' ]
+
+            egregiouslyNestedArray[1][2];
+            //=> 'it'
+
+            egregiouslyNestedArray[1][1][1][1][1];
+            //=> ['?']
+
+            egregiouslyNestedArray[1][1][1][1][1][0];
+            //=> '?'
+
+            const board = [
+            ["X", "O", " "],
+            [" ", "X", "O"],
+            ["X", " ", "O"],
+            ];
+
+            board;
+            // => [["X", "O", " "], [" ", "X", "O"], ["X", " ", "O"]]
+
+            board[1];
+            // => [" ", "X", "O"]
+
+            board[0][0];
+            // => "X"
+
+            board[0][2];
+            // => " "
+
+            board[2][2];
+            // => "O"
+
+            const string = "Hello";
+
+            string.toUpperCase();
+            //=> "HELLO"
+
+            const string = "Hello";
+
+            string.toUpperCase();
+            //=> "HELLO"
+
+            string;
+            //=> "Hello"
+
+
         array-lab
         objects
         mod-objects
