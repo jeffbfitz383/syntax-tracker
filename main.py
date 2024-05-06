@@ -958,7 +958,7 @@ phase0
                 );
                 //=> "There were 4 members in The Smiths"
                         arrays
-        array-method
+        array
             const firstNumber = 32;
             const secondNumber = 9;
             const thirdNumber = 14;
@@ -1143,7 +1143,7 @@ phase0
             //=> "Hello"
 
 
-        array-lab
+        array-Methods
             const superheroes = ["Catwoman", "Storm", "Jessica Jones"];
 
             superheroes.push("Wonder Woman");
@@ -1370,10 +1370,483 @@ phase0
             newMenu;
             // => ["Jalapeno Poppers", "Veggie Burger", "House Salad", "Teriyaki Tofu", "French Fries", "Onion Rings"]
                             
+        array-lab
 
+            const cats = ["Milo", "Otis", "Garfield"];
+
+            function destructivelyAppendCat (name) {
+            cats.push(name);
+            }
+
+            function destructivelyPrependCat (name) {
+            cats.unshift(name);
+            }
+
+            function destructivelyRemoveLastCat () {
+            cats.pop();
+            }
+
+            function destructivelyRemoveFirstCat () {
+            cats.shift();
+            }
+
+            function appendCat (name) {
+            return [...cats, name];
+            }
+
+            function prependCat (name) {
+            return [name, ...cats];
+            }
+
+            function removeFirstCat () {
+            return cats.slice(1);
+            }
+
+            function removeLastCat () {
+            return cats.slice(0, cats.length - 1);
+
+
+
+            
 
         objects
+
+            const address = "11 Broadway, 2nd Floor, New York, NY 10004";
+
+            const address = ["11 Broadway", "2nd Floor", "New York", "NY", "10004"];
+
+            address[1] = "3rd Floor";
+
+            address;
+            //=> ["11 Broadway", "3rd Floor", "New York", "NY", "10004"]
+
+            const street1 = "11 Broadway";
+            const street2 = "2nd Floor";
+            const city = "New York";
+            const state = "NY";
+            const zipCode = "10004";
+
+            const obj = {};
+
+            const obj = { key: value };
+
+            const obj = {
+            key1: value1,
+            key2: value2,
+            };
+
+            const obj = {
+            key1: value1,
+            key2: {
+                innerKey1: innerValue1,
+                innerKey2: innerValue2,
+            },
+            };
+
+            const address = {
+            street: {
+                line1: "11 Broadway",
+                line2: "2nd Floor",
+            },
+            city: "New York",
+            state: "NY",
+            zipCode: "10004",
+            };
+
+            const meals = {
+            breakfast: "Avocado toast",
+            lunch: "Avocado toast",
+            dinner: "Avocado toast",
+            };
+
+            meals.breakfast;
+            // => "Avocado toast"
+
+            meals.dinner;
+            // => "Avocado toast"
+
+            const meals = {
+            breakfast: "Avocado toast",
+            breakfast: "Oatmeal",
+            breakfast: "Scrambled eggs",
+            };
+
+            meals;
+            // => { breakfast: "Scrambled eggs" }
+
+            //=> { line1: "11 Broadway", line2: "2nd Floor" }
+
+            address.city;
+            //=> "New York"
+
+            address.state;
+            //=> "NY"
+
+            address.zipCode;
+            //=> "10004"
+
+            address.street.line1;
+            //=> "11 Broadway"
+
+            address.street.line2;
+            //=> "2nd Floor"
+
+            address.country;
+            //=> undefined
+
+            address["street"];
+            //=> { line1: "11 Broadway", line2: "2nd Floor" }
+
+            address["street"]["line1"];
+            //=> "11 Broadway"
+
+            address["street"]["line2"];
+            //=> "2nd Floor"
+
+            address["city"];
+            //=> "New York"
+
+            address["state"];
+            //=> "NY"
+
+            address["zipCode"];
+            //=> "10004"
+
+            const wildKeys = {
+            "Cash rules everything around me.": "Wu",
+            "C.R.E.A.M.": "Tang",
+            "Get the money.": "For",
+            "$ $ bill, y'all!": "Ever",
+            };
+
+            wildKeys.'Cash rules everything around me.';
+            // ERROR: Uncaught SyntaxError: Unexpected string
+
+            wildKeys["$ $ bill, y'all!"];
+            //=> "Ever"
+
+            address["zip" + "Code"];
+            //=> "10004"
+
+            const meals = {
+            breakfast: "Oatmeal",
+            lunch: "Caesar salad",
+            dinner: "Chimichangas",
+            };
+
+            let mealName = "lunch";
+
+            meals[mealName];
+            //=> "Caesar salad"
+
+            mealName = "dinner";
+            //=> "dinner"
+
+            meals.mealName;
+            //=> undefined
+             
+            const morningMeal = "breakfast";
+            const middayMeal = "lunch";
+            const eveningMeal = "dinner";
+
+            const meals = {
+            [morningMeal]: "French toast",
+            [middayMeal]: "Personal pizza",
+            [eveningMeal]: "Fish and chips",
+            };
+
+            meals;
+            //=> { breakfast: "French toast", lunch: "Personal pizza", dinner: "Fish and chips" } 
+
+            const morningMeal = "breakfast";
+            const middayMeal = "lunch";
+            const eveningMeal = "dinner";
+
+            const meals = {
+            morningMeal: "French toast",
+            middayMeal: "Personal pizza",
+            eveningMeal: "Fish and chips",
+            };
+
+            meals;
+            //=> { morningMeal: "French toast", middayMeal: "Personal pizza", eveningMeal: "Fish and chips" }
+
+            const wednesdayMenu = {
+            cheesePlate: {
+                soft: "Brie",
+                semiSoft: "Fontina",
+                hard: "Provolone",
+            },
+            fries: "Sweet potato",
+            salad: "Southwestern",
+            };
+
+            Object.keys(wednesdayMenu);
+            //=> ["cheesePlate", "fries", "salad"]
+
+        
         mod-objects
+
+            
+
+
+
+            const city = "New York";
+
+
+            const circle = {}; // Create `circle` and set it to an empty Object
+
+            circle;
+            //=> {}
+
+            circle.radius = 5; // Create the key inside `circle` and set its value to 5
+
+            circle;
+            //=> { radius: 5 }
+
+
+            const circle = {};
+
+            circle.radius = 5;
+
+            circle["diameter"] = 10;
+
+            circle.circumference = circle.diameter * Math.PI;
+            //=> 31.41592653589793
+
+            circle["area"] = Math.PI * circle.radius ** 2;
+            //=> 78.53981633974483
+
+            circle;
+            //=> { radius: 5, diameter: 10, circumference: 31.41592653589793, area: 78.53981633974483 }
+            .
+
+
+
+            const mondayMenu = {
+            cheesePlate: {
+                soft: "Chèvre",
+                semiSoft: "Gruyère",
+                hard: "Manchego",
+            },
+            fries: "Curly",
+            salad: "Cobb",
+            };
+
+            mondayMenu.fries = "Sweet potato";
+
+            mondayMenu;
+            //=> { cheesePlate: { soft: "Chèvre", semiSoft: "Gruyère", hard: "Manchego" }, fries: "Sweet potato", salad: "Cobb" }
+            Note that modifying an Object's properties in the way we did above is destructive. This means that we're making changes directly to the original Object.
+
+
+
+            function destructivelyUpdateObject(obj, key, value) {
+            obj[key] = value; //Why are we using bracket notation here?
+
+            return obj;
+            }
+
+
+            const mondayMenu = {
+            cheesePlate: {
+                soft: "Chèvre",
+                semiSoft: "Gruyère",
+                hard: "Manchego",
+            },
+            fries: "Sweet potato",
+            salad: "Cobb",
+            };
+
+            const tuesdayMenu = destructivelyUpdateObject(mondayMenu, "salad", "Caesar");
+
+            tuesdayMenu;
+            //=> { cheesePlate: { soft: "Chèvre", semiSoft: "Gruyère", hard: "Manchego" }, fries: "Sweet potato", salad: "Caesar" }
+
+            tuesdayMenu.salad;
+            //=> "Caesar"
+            Looks like our tuesdayMenu came out perfectly. But what about mondayMenu?
+
+            mondayMenu.salad;
+            //=> "Caesar"
+
+
+
+
+            function nondestructivelyUpdateObject(obj, key, value) {
+            // Code to return new, updated menu object
+            }
+
+
+            function nondestructivelyUpdateObject(obj, key, value) {
+            const newObj = { ...obj };
+
+            // Code to return new, updated menu object goes here
+            }
+
+
+            function nondestructivelyUpdateObject(obj, key, value) {
+            const newObj = { ...obj };
+
+            newObj[key] = value;
+
+            return newObj;
+            }
+
+            const sundayMenu = nondestructivelyUpdateObject(
+            tuesdayMenu,
+            "fries",
+            "Shoestring"
+            );
+
+            tuesdayMenu.fries;
+            //=> "Sweet potato"
+
+            sundayMenu.fries;
+            //=> "Shoestring"
+
+
+
+
+            function nondestructivelyUpdateObject(obj, key, value) {
+            return {
+                ...obj,
+                [key]: value,
+            };
+            }
+
+            const sundayMenu = nondestructivelyUpdateObject(
+            tuesdayMenu,
+            "fries",
+            "Shoestring"
+            );
+
+            tuesdayMenu.fries;
+            //=> "Sweet potato"
+
+            sundayMenu.fries;
+            //=> "Shoestring"
+
+
+
+
+
+            s:
+
+            const wednesdayMenu = {
+            cheesePlate: {
+                soft: "Brie",
+                semiSoft: "Fontina",
+                hard: "Provolone",
+            },
+            fries: "Sweet potato",
+            salad: "Southwestern",
+            };
+
+            delete wednesdayMenu.salad;
+            //=> true
+
+            wednesdayMenu;
+            //=> { cheesePlate: { soft: "Brie", semiSoft: "Fontina", hard: "Provolone" }, fries: "Sweet potato" }
+
+
+
+
+
+
+            typeof [];
+            //=> "object"
+
+
+            const myArray = [];
+
+            myArray.summary = "Empty array!";
+
+            myArray;
+            //=> [summary: "Empty array!"]
+
+
+            myArray["summary"] = "This array is totally empty.";
+
+            myArray;
+            //=> [summary: "This array is totally empty."]
+
+            myArray.summary;
+            //=> "This array is totally empty."
+
+
+            myArray.push(2, 3, 5, 7);
+            //=> 4
+
+            myArray;
+            //=> [2, 3, 5, 7, summary: "This array is totally empty."]
+
+
+            myArray.length;
+            //=> 4
+            .
+
+            myArray[0];
+            //=> 2
+            ?
+
+            myArray[myArray.length - 1];
+            //=> 7
+
+
+
+
+            const myArray = [];
+
+            myArray[0] = "Will this be an `Object` property or an `Array` element?";
+            //=> "Will this be an `Object` property or an `Array` element?"
+
+            // Moment of truth...
+            myArray.length;
+            //=> 1
+
+            myArray;
+            //=> ["Will this be an `Object` property or an `Array` element?"]
+            ?
+
+            myArray["0"] = "What about this one?";
+            //=> "What about this one?"
+
+            myArray.length;
+            //=> 1
+
+            myArray;
+            //=> ["What about this one?"]
+
+
+            const myArray = [2, 3, 5, 7];
+
+            myArray["1"] = "Hi";
+            //=> "Hi"
+
+            myArray;
+            //=> [2, "Hi", 5, 7]
+
+            myArray["01"] = "Ho";
+            //=> "Ho"
+
+            myArray;
+            //=> [2, "Hi", 5, 7, 01: "Ho"]
+
+            myArray[01];
+            //=> "Hi"
+
+            myArray["01"];
+            //=> "Ho"
+
+
+            myArray.length;
+            //=> 4
+
+
+            Object.keys(myArray);
+            //=> ["0", "1", "2", "3", "01"]
+
         object-lab
         debugging in node
         stack-to
