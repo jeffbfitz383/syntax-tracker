@@ -2550,19 +2550,960 @@ phase0
 
             <a href="http://example.com/">This is an absolute URL link</a>
 
+        HTML lists lab
+
+            <body>
+                <p>Banh Mi</p>
+                <p>Grilled Cheese</p>
+                <p>Baba Ghanoush</p>
+                <p>Tomato soup</p>
+                <p>Cheese and crackers</p>
+                <p>Sushi</p>
+            </body>
+
+            <ul>
+                <li>Banh Mi</li>
+                <li>Grilled Cheese</li>
+                <li>Baba Ghanoush</li>
+                <li>Tomato soup</li>
+                <li>Za’atar Bread</li>
+                            <li>Sushi</li>
+            </ul>
+
+            <ul>
+                <li>
+                    Sandwiches
+                    <ul>
+                    <li>Banh Mi</li>
+                    <li>Grilled Cheese</li>
+                    </ul>
+                </li>
+                <li>
+                    Snacks
+                    <ul>
+                    <li>Baba Ghanoush</li>
+                    <li>Za’atar Bread</li>
+                    </ul>
+                </li>
+                <li>
+                    Soups
+                    <ul>
+                    <li>Tomato soup</li>
+                    </ul>
+                </li>
+                <li>
+                    Sushi
+                    <ul>
+                    <li>Sashimi</li>
+                    <li>Uramaki</li>
+                    </ul>
+                </li>
+                </ul>
+
+                <h3>Top 5 Favorite Foods</h3>
+                <ol>
+                <li>Grilled Cheese</li>
+                <li>Sushi</li>
+                <li>Banh Mi</li>
+                <li>Tomato soup</li>
+                <li>Baba Ghanoush</li>
+                </ol>
+
+                <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <title>Lists Lab</title>
+                    </head>
+                    <body>
+                        <ul>
+                        <li>2 slices of bread</li>
+                        <li>
+                            4 slices of cheese
+                            <ul>
+                            <li>cheddar</li>
+                            <li>mozzarella</li>
+                            <li>pepper jack</li>
+                            </ul>
+                        </li>
+
+                        <li>1 tbsp of butter</li>
+                        </ul>
+
+                        <ol>
+                        <li>Spread butter on bread and frying pan</li>
+                        <li>Place bread in frying pan and fry</li>
+                        <li>Add cheese on top of bread</li>
+                        <li>Cover with second slice of bread</li>
+                        <li>Turn over and fry for 2 minutes</li>
+                        </ol>
+                    </body>
+                    </html>
+
+
+        HTML Tables lab 
+
+            <table></table>
+            <table>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Bringing</th>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                </table>
+
+            <tr>
+                <td>Daniel</td>
+                <td>718-555-1212</td>
+                <td>Guacamole</td>
+            </tr>
+
+            <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Bringing</th>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>718-555-1212</td>
+                <td>Guacamole</td>
+            </tr>
+            <tr>
+                <td>Rachel</td>
+                <td>718-555-1212</td>
+                <td>Chips</td>
+            </tr>
+            <tr>
+                <td>Terrance</td>
+                <td>914-555-1212</td>
+                <td>Salsa</td>
+            </tr>
+            </table>
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <title>HTML Tables</title>
+            </head>
+            <body>
+                <table>
+                <tr>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>2017 estimate</th>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                    <td>New York</td>
+                    <td>8,622,698</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                    <td>California</td>
+                    <td>3,999,759</td>
+                </tr>
+                <tr>
+                    <td>Chicago</td>
+                    <td>Illinois</td>
+                    <td>2,716,450</td>
+                </tr>
+                <tr>
+                    <td>Houston</td>
+                    <td>Texas</td>
+                    <td>2,312,717</td>
+                </tr>
+                </table>
+            </body>
+            </html>
+
+
+
+
+        HTML Images lab
+
+            <img src="../images/my_company_logo.png" />
+            <img src="https://i.imgur.com/H1qsYEl.png" />
+
+            <img
+                src="https://i.imgur.com/H1qsYEl.png"
+                alt="comedic crow gets wholesome support"
+            />
+
+            <img
+                src="../images/my_company_logo.png"
+                alt="my company name"
+                title="We're here to help you!"
+            />
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <title>HTML Images</title>
+            </head>
+            <body>
+                <img src="something.jpg" />
+                <img src="something.jpg" alt="something!" />
+                <img src="something.jpg" alt="something!" title="this is something!" />
+            </body>
+            </html>
+
+        HTML Validation
+
+        vocab
+        research elements
+        bot 9000 lab
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <title>HTML ISSUE BOT 9000</title>
+            </head>
+            <body>
+                <h1>HTML ISSUE BOT 9000 - Checks for Issues</h1>
+
+                <h2>Issue Bot's Daily Diary</h2>
+
+                <p>
+                8:00am Issue bot circuits online.
+                <a
+                    href="http://fc06.deviantart.net/fs10/i/2006/153/e/5/sad_strut_robot_walk_by_ikstudio.gif"
+                    >Wakes up lonely</a
+                >. Please explain
+                <a
+                    href="http://www.simplysyndicated.com/wp-content/uploads/2013/04/hott-robot-love-image.jpg"
+                    >love</a
+                >
+                to issue bot. Needs input...
+                </p>
+                <p>
+                9:15am Issue bot breaks door handle oh no! <span>Issue</span> bot does not
+                know its own strength. Issue bot ashamed.
+                </p>
+                <p>10:00am Issue bot scheduled oil change.</p>
+                <p>3:15pm Rewire Electrical Outlets in High School Classroom.</p>
+                <p>
+                4:30pm Issue Bot Lithium-Ion Battery charge, initiate nap sequence on quad
+                couches.
+                </p>
+
+                <h2>Issue Bot Tasks</h2>
+
+                <ul>
+                <li>Debug Ruby Labs</li>
+                <li>Massage Joe's Back</li>
+                <li>Archive Steph's Gif collection</li>
+                <li></li>
+                <li>Take out trash</li>
+                </ul>
+
+                <h2>Issue Bot Camera Capture Archive</h2>
+
+                <img src="images/adam.jpg" alt="Adam" />
+                <img src="images/avi.jpg" alt="Avi" />
+                <img src="images/spencer.jpg" alt="Spencer" />
+            </body>
+            </html>
+
+        dev tools
+
+            <h1 id="firstHeading" class="firstHeading">...</h1>
+
+            <img
+                src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg"
+                alt="Puppies"
+            />
+
+            <img
+                src="http://images2.fanpop.com/image/photos/9400000/Aaaaaawwwwwwwwww-Sweet-puppies-9415255-1600-1200.jpg"
+                width="200"
+                alt="Puppies"
+            />
+
+
+        album cover lab 
+
+            <!doctype html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <title>HTML Album Cover</title>
+                <link rel="stylesheet" href="css/style.css">
+            </head>
+
+            <body>
+                <div class="wrapper">
+                <div id="front" class="album">
+                    <div id="title-box">
+
+                    <h4>PHARRELL WILLIAMS</h4>
+
+                    <h2>HAPPY</h2>
+
+
+                    <h4>| FROM DESPICABLE ME 2 |</h4>
+
+                    </div>
+                </div>
+
+                <div id="back" class="album">
+
+                    <h3>| FROM DESPICABLE ME 2 |</h3>
+
+                    <h1>HAPPY</h1>
+
+                    <h3>WRITTEN BY PHARRELL WILLIAMS</h3>
+
+                    <p>PUBLISHED BY EMI APRIL MUSIC, INC. OBO ITSELF AND MORE WATERFROM NAZARETH (ASCAP) / UNIVERSAL PICTURES MUSIC (ASCAP) | BACKGROUND VOCALS PERFORMED BY RHEA DUMMETT, TREVON HENDERSON, ASHLEY L. LEE, SHAMIKA HIGHTOWER, JASMINE MURRAY AND
+                    TERRENCE
+                    ROLLE | PRODUCED BY PHARRELL WILLIAMS | RECORDED BY MIKE LARSON FOR I AM OTHER ENTERTAINMENT AT CIRCLE HOUSE STUDIOS, MIAMI, FL | ASSISTED BY MATTHEW DESRAMEAUX | DIGITAL EDITING AND ARRANGEMENT BY ANDREW COLEMAN AND MIKE LARSON FOR I AM
+                    OTHER
+                    ENTERTAINMENT | MIXED BY LESLIE BRATHWAITE AT MUSIC BOX STUDIOS, ATLANTA, GA.</p>
+
+                    <span>PHARRELLWILLIAMS.COM</span>
+
+                    <img src="https://s3.amazonaws.com/learn-verified/columbia-logo.png" alt="Columbia">
+
+                    <span>COLUMBIARECORDS.COM</span>
+
+                    <br>
+
+                    <img src="https://s3.amazonaws.com/learn-verified/sony-logo.png" alt="Sony">
+
+                </div>
+                </div>
+            </body>
+
+            </html>
+        riyadj lab
+        
+            <!doctype html>
+                <html lang="en">
+                <head>
+                <meta charset="UTF-8">
+                <title>Code Challenge 1</title>
+                <link rel="stylesheet" href="css/style.css">
+                </head>
+                <body>
+                <div class="wrapper">
+                    <!-- HEADER -->
+                    <h1>Welcome to Riyadh</h1>
+                    <!-- SUB HEAD -->
+                    <h2>Where A Traditional Past Meets A Modern Future.</h2>
+
+                    <div id="content">
+                    <!-- IMAGES, SMALL SUB HEADS, PARAGRAPHS, LINKS -->
+                    <img src="./images/transportation/transit.jpg" alt="Modern Transit" />
+                    <h3>Travel</h3>
+                    <p>Once a mudbrick waystation along desert trading routes, Riyadh is now one of the wealthiest cities in the world. The country’s political, financial and administrative capital is also a city with a fascinating subtext.</p>
+                    
+                    <h3>History</h3>
+                    <p>Riyadh (/rɨˈjɑːd/; Arabic: الرياض‎ ar-Riyāḍ pronounced [arːiˈjɑːdˤ],"The Gardens") is the capital and largest city of Saudi Arabia. It is also the capital of Riyadh Province, and belongs to the historical regions of Najd and Al-Yamama. It is situated in the center of the Arabian Peninsula on a large plateau, and is home to 5,254,560 people, and the urban center of a region with a population of close to 7 million people.</p>
+                    
+                    <img src="./images/garden.jpg" alt="Riyadh Garden" />
+                    
+                    <p>The city is divided into 15 municipal districts, managed by Riyadh Municipality headed by the mayor of Riyadh, and the Riyadh Development Authority, chaired by the governor of Riyadh Province, Khalid bin Bandar Al Saud. The current mayor of Riyadh is Abdullah bin Abdul Rahman Al Mogbel, appointed in 2012. Riyadh has the largest all female university in the world, the Princess Nora bint Abdulrahman University. It has been designated as a Beta World City.</p>
+                    
+                    <img src="./images/transportation/camels-in-truck.jpg" alt="The roads of Riyadh" />
+                    
+                    <h3>Sources</h3>
+                    <a href="http://www.lonelyplanet.com/saudi-arabia/riyadh">Lonely Planet</a><br />
+                    <a href="http://en.wikipedia.org/wiki/Riyadh">Wikipedia</a>
+                    </div>
+                </div>
+                </body>
+                </html>
+
 
     CSS
 
         
         Intro to CSS
+
+            /*
+            The CSS comment syntax is text between "slash-star" and "star-slash"
+            */
+
+            /*
+            selects all anchor tag elements in the document (e.g. <a href="page-link.html">Page Link</a>)
+            */
+            a {
+            }
+
+            /*
+            selects all headers of type h3 in the document (e.g. <h3>Type selectors</h3>)
+            */
+            h3 {
+            }
+
+            /*
+            selects all paragraph elements in the document (e.g. <p>Type selectors are used
+            to...</p>)
+            */
+            p {
+            }
+
+            /*
+            select all elements that have the 'important-topic' classname (e.g. <h2 class='important-topic'>
+            and <p class='important-topic'>)
+            */
+            .important-topic {
+            }
+
+            /*
+            select all elements that have the 'helpful-hint' classname (e.g. <h2 class='helpful-hint'>
+            and <p class='helpful-hint'>)
+            */
+            .helpful-hint {
+            }
+
+            /*
+            selects the HTML element with the id 'main-header' (e.g. <h1 id='main-header'>)
+            */
+            #main-header {
+            }
+
+            /*
+            selects the HTML element with the id 'welcome-message' (e.g. <p id='welcome-message'>)
+            */
+            #welcome-message {
+            }
+
+            selector {
+                color: blue;
+            }
+            /*
+            This is a css declaration for a selector
+            'color' is a property name and 'blue' is a css property value
+            !!!!! CSS declarations must end with a semi-colon (;) !!!!!
+            */
+            
+            /*
+            The CSS declaration block below:
+            * Will apply to all `h1` elements
+            * Will change the text color to blue
+            * Will set the font family to Georgia
+            */
+            h1 {
+            color: blue;
+            font-family: Georgia;
+            }
+
         Introduction to CSS Lab
+
+            <link rel="stylesheet" href="relative path to CSS file" />
+            <link rel="stylesheet" href="relative path to CSS file" 
+
+            /* Tag selector to select the 'body' element */
+            body {
+            background: #00b3e6;
+            }
+
+            /* Tag selector to select all 'div' elements. We only have one 'div' in our HTML */
+            div {
+            width: 700px;
+            margin: auto;
+            font-family: Helvetica Neue;
+            background: white;
+            padding: 30px;
+            }
+
+            /* ID selector to select the element with id 'main-header' */
+            #main-header {
+            font-size: 22px;
+            color: red;
+            }
+
+            /* Class selector to select elements containing the class 'perspective-questions' */
+            .perspective-questions {
+            font-style: italic;
+            }
+
         CSS Fundamentals
+
+            <p style="color: blue;"></p>
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                p {
+                    color: blue;
+                }
+                </style>
+            </head>
+            <body>
+                <p>This is a paragraph.</p>
+            </body>
+            </html>
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <link rel="stylesheet" href="./styles.css" />
+            </head>
+            <body>
+                <p>This is a paragraph.</p>
+            </body>
+            </html>
+
+            p#introduction {
+                color: blue;
+            }
+
+            <p class="alert">I'm red</p>
+
+            h2,
+            h3 {
+            color: green;
+            }
+
+            <h2>I'm green</h2>
+            <h3>I'm green too</h3>
+            <h4>I'm not green</h4>
+
+            article p {
+            color: blue;
+            }
+
+            <article>
+                <p>I'm blue</p>
+            </article>
+
+            <p>I'm not blue</p>
+
+            article > p {
+            color: blue;
+            }
+
+            <article>
+            <p>I'm blue</p>
+            </article>
+
+            <article>
+            <aside>
+                <p>I'm not blue</p>
+            </aside>
+            </article>
+
+            h3 + p {
+            color: blue;
+            }
+
+            <h3>Header</h3>
+            <p>I'm blue</p>
+            <p>I'm not blue</p>
+
+            h3 ~ p {
+            color: red;
+            }
+
+            <h3>Header</h3>
+            <p>I'm red</p>
+            <p>I'm red</p>
+
+            * {
+            color: yellow;
+            }
+
+            <h2>I'm yellow</h2>
+
+            <p>I'm yellow</p>
+
+            <div>I'm yellow</div>
+
+            input[type="text"] {
+            width: 200px;
+            }
+
+            <input type="text" value="I'm 200px" />
+            <input type="submit" value="I'm not 200px" />
+
+            a:link {
+            color: blue;
+            }
+
+            a:visited {
+            color: purple;
+            }
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+            I'm blue before you click, and purple after
+            </a>
+
+            p {
+            color: rgb(255, 255, 255);
+            }
+
+            p {
+            color: rgba(0, 0, 255, 0.5);
+            }
+
+            p.alert {
+            color: #ff0000; /* Alert text displays red */
+            }
+                                            
         CSS Fundamentals Lab
+
+            <link rel="stylesheet" href="relative path to CSS file" />
+            h1 {
+            color: red;
+            }
+
+
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                }
+
+                h1{
+                text-align: center;
+                }
+
+                img {
+                display: block;
+                margin: 0 auto;
+                }
+
+                nav {
+                text-align: center;
+                }
+
+                figcaption {
+                text-align: center;
+                font-size: 12px;
+                }
+
+                nav a {
+                padding: 0 10px;
+                background-color: grey;
+                margin: 0 auto;
+                }
+
+                #featured-property p {
+                width: 800px;
+                text-align: center;
+                margin: 8px auto;
+                }
+
+                #details div{
+                float: left;
+                background-color: red;
+                width: 25%;
+                text-align: center;
+                }
+
         CSS Validation Lab: Issue Bot 9000
+
+            body {
+                background: pink;
+                }
+
+                h1 {
+                color: blue;
+                font-size: 3em; 
+                }
+
+                h2 {
+                color: green;
+                font-weight: normal;
+                font-style: italic;
+                }
+
+                .completed {
+                font-size: 12px;
+                }
+
+                #tasks .completed {
+                background: #ccc;
+                text-decoration: underline;
+                }
         My Little Rainbow
+
+
+            <div>
+                <!-- the parent element -->
+                <p></p>
+                <!-- the first sibling element/the first child-->
+                <p></p>
+                <!-- the second sibling element/the second child -->
+                </div>
+
+                * {
+                color: red; /* color in CSS refers to font color */
+                } /* all elements will have red font */
+
+                <head>
+                    <title>My Little Rainbow</title>
+                    <link rel="stylesheet" type="text/css" href="./main.css" />
+                    </head>
+
+                <div id="red">...</div>
+
+                #red {
+                /* this selects any elements with the red id */
+                border-top-color: #f00;
+                }
+
+                div {
+                    border: 20px solid; /* this is short hand for setting
+                                                the border's width, its type */
+                    display: inline-block; /* a way of positioning elements */
+                    min-width: 20em; /* the two min styles make the shape */
+                    min-height: 25em; /* of the divs oblong*/
+                    border-radius: 50%; /* this makes the normally square div round */
+                    border-left-color: transparent; /* these remove the color from the left side */
+                    border-right-color: transparent; /* the right side */
+                    border-bottom-color: transparent; /* and the bottom of the circle */
+                    }
+
+                    #red {
+                    /* this selects any elements with the red id */
+                    border-top-color: #f00;
+                    }
+
+                    #orange {
+                    border-top-color: #ffa500;
+                    }
+
+                    #yellow {
+                    border-top-color: #ff0;
+                    }
+
+                    #green {
+                    border-top-color: #00bc3f;
+                    }
+
+                    #blue {
+                    border-top-color: #06f;
+                    }
+
+                    #indigo {
+                    border-top-color: #8a2be2;
+                    }
+                    #violet {
+                    border-top-color: #d300c9;
+                    }
+
         BONUS: CSS Kitten Wheelbarrow
+
+            .parent-element {
+            position: relative;
+            }
+
+            .child-element {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            }
+
+            /* Select the image with a class of kitty-1 */
+
+            .kitty-1 {
+            position: absolute;
+            z-index: 1;
+            top: 276px;
+            left: 129px;
+            }
+
+            /* Select the image with id of kitty-2 */
+
+            #kitty-2 {
+            position: absolute;
+            z-index: 2;
+            top: 212px;
+            left: 369px;
+            }
+
+            /* Select the image inside the element with an id of basket (using its descendent relationship) */
+
+            #basket img {
+            position: absolute;
+            z-index: 5;
+            top: 291px;
+            left: 319px;
+            }
+
+            /* Select the image based on it being a sibling that follows immediately after the element with an id of ball (using adjacent sibling selector) */
+
+            #ball + img {
+            position: absolute;
+            z-index: 4;
+            top: 260px;
+            left: 455px;
+            }
+
+            /* Select the image that has an attribute value matching "Kitty 5" (using attribute selector) */
+
+            img[alt="Kitty 5"] {
+            position: absolute;
+            z-index: 3;
+            top: 217px;
+            left: 223px;
+            }
+
+            /* Congratulations! Now all your kittens are collected. */
+                    
+
+            html {
+            background: url(../images/beautiful-day.jpg) no-repeat top center;
+            }
+
+            img {
+            position: relative;
+            z-index: 11;
+            cursor: pointer;
+            }
+
+            .wrapper {
+            position: relative;
+            width: 960px;
+            height: 100vh;
+            margin: 0 auto;
+            }
+
+            #wheelbarrow, #wheelbarrow-foreground {
+            margin-left: 80px;
+            width: 688px;
+            height: 514px;
+            }
+
+            #wheelbarrow { 
+            position: relative;
+            background: url(../images/wheelbarrow.png) no-repeat;
+            z-index: 0;
+            top: 220px;
+            }
+            #wheelbarrow-foreground {
+            pointer-events: none;
+            position: absolute;
+            background: url(../images/wheelbarrow-foreground.png) no-repeat;
+            z-index: 10;
+            top: 220px;
+            }
+
+            #basket, #ball {
+            display: inline;
+            }
+
+
         BONUS: CSS Graffiti Override Lab
 
+            #wall .tag-1 {
+            display: none;
+            }
+
+            #wall div#tag-2 {
+            display: none;
+            }
+
+            div#wall #tag-3.slick.wicked {
+            display: none;
+            }
+
+            #wall .parent #tag-4 {
+            display: none;
+            }
+
+            div#wall div.parent #tag-5.slick {
+            display: none;
+            }
+
+            body div#wall div.parent div:last-child div#tag-6 {
+            display: none;
+            }
+
+            body div#wall div.parent div:first-child > div#tag-7.slick {
+            display: none;
+            }
+
+            body {
+                background: black url(../images/sketch.jpg) no-repeat center;
+                background-size: cover;
+                }
+
+                #wall {
+                position: relative;
+                margin: 40px auto;
+                width: 980px;
+                height: 622px;
+                background: url(../images/wall.jpg) no-repeat center;
+                -moz-box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+                -webkit-box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+                box-shadow: 15px 15px 47px lime, -15px -15px 47px aqua;
+                border: 15px solid white;
+                border-bottom: 60px solid white;
+                }
+
+                .tag-1, #tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 980px;
+                height: 622px;
+                }
+
+                .tag-1 {
+                background: url(../images/tag-1.png) no-repeat;
+                z-index: 7;
+                display: block;
+                }
+
+                #wall #tag-2 {
+                background: url(../images/tag-2.png) no-repeat;
+                z-index: 6;
+                display: block;
+                }
+
+                div#wall #tag-3.slick {
+                background: url(../images/tag-3.png) no-repeat;
+                z-index: 5;
+                display: block;
+                }
+
+                #wall #tag-4 {
+                background: url(../images/tag-4.png) no-repeat;
+                z-index: 4;
+                display: block;
+                }
+
+                div#wall .parent #tag-5.slick {
+                background: url(../images/tag-5.png) no-repeat;
+                z-index: 3;
+                display: block;
+                }
+
+                div#wall div.parent div:last-child div#tag-6 {
+                background: url(../images/tag-6.png) no-repeat;
+                z-index: 2;
+                display: block;
+                }
+
+                body div#wall div.parent div > #tag-7.slick {
+                background: url(../images/tag-7.png) no-repeat;
+                z-index: 1;
+                display: block;
+                }
 
     DOM
 
