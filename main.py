@@ -2370,24 +2370,185 @@ phase0
 
         
         A Quick Tour Of The Web
-        Welcome to HTML
-        Files and File Types
-        Experiencing HTML Lab
+
+            <!DOCTYPE html>
+            <html lang="">
+            <head>
+                <title>Home | The Metropolitan Museum of Art</title>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="title" content="Home" />
+                <meta
+                name="keywords"
+                content="Metropolitan Museum, Met, Metropolitan Museum of Art, Met Museum, Metropolitan"
+                />
+                <meta name="description" content="The Metropolitan Museum of Art is a..." />
+                ...
+            </head>
+            </html>
+
+
+            Welcome to HTML
+            Files and File Types
+            Experiencing HTML Lab
+        
+            <li>"Monstera deliciosa"</li>
+            <li>"Fiddle Leaf Fig"</li>
+            <li>"Pilea"</li>
+            <li>"Golden Pothos"</li>
+            <li>"Peace Lily"</li>
+
+            <ol>
+            <li>"Monstera deliciosa"</li>
+            <li>"Fiddle Leaf Fig"</li>
+            <li>"Pilea"</li>
+            <li>"Golden Pothos"</li>
+            <li>"Peace Lily"</li>
+            </ol>
+
+            <ol>
+                  <li>"Monstera deliciosa"</li>
+                <li>"Fiddle Leaf Fig"</li>
+                <li>"Pilea"</li>
+                <li>"Golden Pothos"</li>
+                <li>"Peace Lily"</li>
+            </ol>
+
+            <p>Some of my favorite plants!</p>
+            <ul>
+                <li>"Monstera deliciosa"</li>
+                <li>"Fiddle Leaf Fig"</li>
+                <li>"Pilea"</li>
+                <li>"Golden Pothos"</li>
+                <li>"Peace Lily"</li>
+            </ul>
+
+            <h1>My Plant List</h1>
+
+
+            <h1>My Plant List</h1>
+            <p>Some of my favorite plants!</p>
+            <ul>
+                <li>"Monstera deliciosa"</li>
+                <li>"Fiddle Leaf Fig"</li>
+                <li>"Pilea"</li>
+                <li>"Golden Pothos"</li>
+                <li>"Peace Lily"</li>
+            </ul>
+
+
+
+
+
         Document Structure Continued
-        Your First HTML Tag Lab
-        Nested HTML Tags And Attributes
-        Create a Link Using the href Attribute
+
+
+
+            <html lang="en"></html>
+            <!-- This is a comment! -->
+
+            <link rel="stylesheet" type="text/css" href="style.css" />
+            
+            <link
+                rel="stylesheet"
+                href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            />
+            <link rel="stylesheet" type="text/css" href="company.css" />
+            <link rel="stylesheet" type="text/css" href="engineering-department.css" />
+            <link rel="stylesheet" type="text/css" href="project-x-launch.css" />
+            <link rel="stylesheet" type="text/css" href="typography.css" />
+
+            <title>My Site Title</title>
+
+        my first html lab  
+
+            <!-- Write your HTML in this file -->
+            <h1>Hello, World!</h1>
+            explorer.exe index.html
+
+        Nested HTML Tags And Attributes00
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Web development course</title>
+            </head>
+            <body>
+                <header>
+                <!-- header element documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header -->
+
+                <nav id="main-navigation">
+                <!-- nav element documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
+
+                    <ul>
+                    <!-- ul element documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul -->
+
+                    <li><a href="/web">Introduction to the web</a></li>
+                    <!-- li element documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li -->
+
+                    <li><a href="/html">Learn HTML</a></li>
+                    </ul>
+                </nav>
+                </header>
+            </body>
+            </html>
+
+            <element attribute_name="attribute_value" another_attribute_name="another_attribute_value"></element>
+
+            <p id='main_paragraph'>This element can be uniquely identified  using the 'main_paragraph' id HTML attribute</p>
+
+            <p class='other_paragraphs'>This element belongs to a group of elements who share the 'other_paragraphs' HTML class attribute</p>
+            <p class='other_paragraphs'>This element also belongs to a group of elements who share the 'other_paragraphs' HTML class attribute</p>
+
+
+            <a href="https://flatironschool.com/">Flatiron School</a>
+
+        create href lab 
+
+            <!-- Write your HTML in this file -->
+
+            <a href="https://flatironschool.com">Flatiron School</a>
+
         HTML Elements
-        HTML Lists
-        HTML Tables
-        HTML Images
-        HTML Validation
-        Expanding Your HTML Vocabulary via MDN
-        Researching HTML Elements
-        HTML Issue Bot 9000
-        Using Your Browser's Developer Tools
-        HTML Album Cover
-        BONUS: Riyadh Blog
+
+            <ul>
+            <li>One item</li>
+            <li>Another item</li>
+            </ul>
+
+            <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            </ol>
+
+            <dl>
+            <dt>First term</dt>
+            <dd>Term definition</dd>
+            </dl>
+
+            <img
+            src="https://via.placeholder.com/800x600.png"
+            alt="Alternative Text"
+            title="Display Title"
+            width="800"
+            height="600"
+            />
+
+            <a href="http://example.com/">This is a link</a>
+
+            <a href="http://example.com/">
+            <img src="https://via.placeholder.com/800x600.png" alt="Alternative Text" />
+            </a>
+    
+
+            <a href="mailto:webmaster@example.com">Send an email</a>
+
+            <p id="tips">Useful Tips Section</p>
+            <a href="#tips">Jump to the Useful Tips Section</a>
+
+            <a href="about.html">This is a relative URL link</a>
+
+            <a href="http://example.com/">This is an absolute URL link</a>
 
 
     CSS
