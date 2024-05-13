@@ -1991,6 +1991,376 @@ phase0
             }
             console.log( startingNumber );
             }
+        object iteration
+        
+            const userInfo = {
+            firstName: "Avi",
+            lastName: "Flombaum",
+            companyName: "Flatbook Labs",
+            jobTitle: "Developer Apprentice",
+            friend1firstName: "Nancy",
+            friend1lastName: "Burgess",
+            friend1companyName: "Flatbook Labs",
+            friend1jobTitle: "Developer Apprentice",
+            friend2firstName: "Corinna",
+            friend2lastName: "Jackson",
+            friend2companyName: "Flatbook Labs",
+            friend2jobTitle: "Senior Developer",
+            project1title: "Flatbook",
+            project1description:
+                "The premier Flatiron School-based social network in the world.",
+            project2title: "Scuber",
+            project2description:
+                "A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.",
+            };
+
+            const userInfo = {
+            firstName: "Avi",
+            lastName: "Flombaum",
+            company: {
+                name: "Flatbook Labs",
+                jobTitle: "Developer Apprentice",
+            },
+            friends: [
+                {
+                firstName: "Nancy",
+                lastName: "Burgess",
+                company: {
+                    name: "Flatbook Labs",
+                    jobTitle: "Developer Apprentice",
+                },
+                },
+                {
+                firstName: "Corinna",
+                lastName: "Jackson",
+                company: {
+                    name: "Flatbook Labs",
+                    jobTitle: "Lead Developer",
+                },
+                },
+            ],
+            projects: [
+                {
+                title: "Flatbook",
+                description:
+                    "The premier Flatiron School-based social network in the world.",
+                },
+                {
+                title: "Scuber",
+                description:
+                    "A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.",
+                },
+            ],
+            };
+
+            userInfo.lastName;
+            //=> "Flombaum"
+
+            userInfo.company.jobTitle;
+            //=> "Developer Apprentice"
+
+            userInfo.friends[0].firstName;
+            //=> "Nancy"
+
+            userInfo.projects[1].title;
+            //=> "Scuber"
+            
+            const letters = ["a", ["b", ["c", ["d", ["e"]], "f"]]];
+
+            
+            letters[1];
+            //=> ["b", ["c", ["d", ["e"]], "f"]]
+
+            letters[1][1];
+            //=> ["c", ["d", ["e"]],
+
+
+            letters[1][1][1][1];
+            //=> ["e"]
+
+            letters[1][1][1][1][0];
+            //=> "e"
+
+
+            const userInfo = {
+            firstName: "Avi",
+            lastName: "Flombaum",
+            companyName: "Flatbook Labs",
+            jobTitle: "Developer Apprentice",
+            friend1firstName: "Nancy",
+            friend1lastName: "Burgess",
+            friend1companyName: "Flatbook Labs",
+            friend1jobTitle: "Developer Apprentice",
+            friend2firstName: "Corinna",
+            friend2lastName: "Jackson",
+            friend2companyName: "Flatbook Labs",
+            friend2jobTitle: "Senior Developer",
+            project1title: "Flatbook",
+            project1description:
+                "The premier Flatiron School-based social network in the world.",
+            project2title: "Scuber",
+            project2description:
+                "A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.",
+            };
+
+            function shallowIterator(target) {
+            for (const key in target) {
+                console.log(target[key]);
+            }
+            }
+
+            shallowIterator(userInfo);
+            // LOG: Avi
+            // LOG: Flombaum
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Nancy
+            // LOG: Burgess
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Corinna
+            // LOG: Jackson
+            // LOG: Flatbook Labs
+            // LOG: Senior Developer
+            // LOG: Flatbook
+            // LOG: The premier Flatiron School-based social network in the world.
+            // LOG: Scuber
+            // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
+
+            const primes = [2, 3, 5, 7, 11];
+
+            shallowIterator(primes);
+            // LOG: 2
+            // LOG: 3
+            // LOG: 5
+            // LOG: 7
+            // LOG: 11
+
+            const numbers = [1, [2, [4, [5, [6]], 3]]];
+
+            shallowIterator(numbers);
+            // LOG: 1
+            // LOG: [2, [4, [5, [6]], 3]]
+
+            function shallowIterator(target) {
+            for (const key in target) {
+                if (typeof target[key] === "object") {
+                for (const nestedKey in target[key]) {
+                    console.log(target[key][nestedKey]);
+                }
+                } else {
+                console.log(target[key]);
+                }
+            }
+            }
+
+            shallowIterator(numbers);
+            // LOG: 1
+            // LOG: 2
+            // LOG: [4, [5, [6]], 3]
+
+            function deepIterator(target) {
+            if (typeof target === "object") {
+                for (const key in target) {
+                deepIterator(target[key]);
+                }
+            } else {
+                console.log(target);
+            }
+            }
+
+            const numbers = [1, [2, [4, [5, [6]], 3]]];
+
+            deepIterator(numbers);
+            // LOG: 1
+            // LOG: 2
+            // LOG: 4
+            // LOG: 5
+            // LOG: 6
+            // LOG: 3
+
+            function deepIterator(target) {
+            console.log("Argument: ", target);
+            if (typeof target === 'object') {
+            for (const key in target) {
+                deepIterator(target[key]);
+            }
+            } else {
+            console.log("Logged value: ", target);
+            }
+                }
+            const numbers = [1, [2, [4, [5, [6]], 3]]];
+
+            deepIterator(numbers);
+
+
+            function deepIterator(target) {
+            if (typeof target === 'object') {
+            for (const key in target) {
+                deepIterator(target[key]);
+            }
+            } else {
+            console.log(target);
+            }
+            }
+
+            const userInfo = {
+            firstName: "Avi",
+            lastName: "Flombaum",
+            company: {
+                name: "Flatbook Labs",
+                jobTitle: "Developer Apprentice",
+            },
+            friends: [
+                {
+                firstName: "Nancy",
+                lastName: "Burgess",
+                company: {
+                    name: "Flatbook Labs",
+                    jobTitle: "Developer Apprentice",
+                },
+                },
+                {
+                firstName: "Corinna",
+                lastName: "Jackson",
+                company: {
+                    name: "Flatbook Labs",
+                    jobTitle: "Lead Developer",
+                },
+                },
+            ],
+            projects: [
+                {
+                title: "Flatbook",
+                description:
+                    "The premier Flatiron School-based social network in the world.",
+                },
+                {
+                title: "Scuber",
+                description:
+                    "A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.",
+                },
+            ],
+            };
+
+            deepIterator(userInfo);
+            // LOG: Avi
+            // LOG: Flombaum
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Nancy
+            // LOG: Burgess
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Corinna
+            // LOG: Jackson
+            // LOG: Flatbook Labs
+            // LOG: Lead Developer
+            // LOG: Flatbook
+            // LOG: The premier Flatiron School-based social network in the world.
+            // LOG: Scuber
+            // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
+
+            let counter = 0;
+
+            function deepIterator(target) {
+            counter++;
+
+            if (typeof target === "object") {
+                for (const key in target) {
+                deepIterator(target[key]);
+                }
+            } else {
+                console.log(target);
+            }
+            }
+
+            deepIterator(userInfo);
+            // LOG: Avi
+            // LOG: Flombaum
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Nancy
+            // LOG: Burgess
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Corinna
+            // LOG: Jackson
+            // LOG: Flatbook Labs
+            // LOG: Lead Developer
+            // LOG: Flatbook
+            // LOG: The premier Flatiron School-based social network in the world.
+            // LOG: Scuber
+            // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters.
+
+            function deepIterator(target) {
+            if (typeof target === "object") {
+                for (const key in target) {
+                deepIterator(target[key]);
+                }
+            } else if (Array.isArray(target)) {
+                console.log("We found an array");
+                // iterate through the array
+            } else {
+                // console.log(target);
+            }
+            }
+
+            deepIterator(userInfo);
+
+
+            function deepIterator(target) {
+            if (Array.isArray(target)) {
+                // iterate through the array
+                console.log("We found an array");
+            } else if (typeof target === "object") {
+                for (const key in target) {
+                deepIterator(target[key]);
+                }
+            } else {
+                console.log(target);
+            }
+            }
+
+            deepIterator(userInfo);
+            // LOG: Avi
+            // LOG: Flombaum
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: We found an array
+            // LOG: We found an array
+
+            function deepIterator(target) {
+            if (Array.isArray(target)) {
+                for (const element of target) {
+                deepIterator(element);
+                }
+            } else if (typeof target === "object") {
+                for (const key in target) {
+                deepIterator(target[key]);
+                }
+            } else {
+                console.log(target);
+            }
+            }
+
+            deepIterator(userInfo);
+            // LOG: Avi
+            // LOG: Flombaum
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Nancy
+            // LOG: Burgess
+            // LOG: Flatbook Labs
+            // LOG: Developer Apprentice
+            // LOG: Corinna
+            // LOG: Jackson
+            // LOG: Flatbook Labs
+            // LOG: Lead Developer
+            // LOG: Flatbook
+            // LOG: The premier Flatiron School-based social network in the world.
+            // LOG: Scuber
+            // LOG: A burgeoning startup helping busy parents transport their children to and from all of their activities on scooters
 
 
 
