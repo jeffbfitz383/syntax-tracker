@@ -3878,7 +3878,100 @@ phase0
     
         JavaScript Events
         JavaScript Event Listeners Lab
+
+            const input = document.getElementById('button');
+            input.addEventListener('click', function() {
+            alert('I was clicked!');
+            });
+           
+
+            function() {
+            alert('I was clicked!');
+            }
+
+            const input = document.getElementById('button');
+
+            function clickAlert() {
+            alert('I was clicked!');
+            }
+
+            input.addEventListener('click', clickAlert);
+
+            function addingEventListener() {
+            const input = document.getElementById("button");
+            input.addEventListener("click", function () {
+                alert("I was clicked!");
+            });
+            }
+
         Moving Things with JavaScript by Acting on Events
+
+            const dodger = document.getElementById("dodger");
+            dodger.style.backgroundColor = "#000000";
+            dodger.style.backgroundColor = "#FF69B4";
+            dodger.style.bottom = "100px";
+            dodger.style.bottom = "0px";
+            dodger.style.left = "0px";
+
+            document.addEventListener("keydown", function (event) {
+            console.log(event);
+            });
+
+            document.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowLeft") {
+                const leftNumbers = dodger.style.left.replace("px", "");
+                const left = parseInt(leftNumbers, 10);
+
+                dodger.style.left = `${left - 1}px`;
+            }
+            });
+
+            const dodger = document.getElementById("dodger");
+
+            function moveDodgerLeft() {
+            const leftNumbers = dodger.style.left.replace("px", "");
+            const left = parseInt(leftNumbers, 10);
+
+            if (left > 0) {
+                dodger.style.left = `${left - 1}px`;
+            }
+            }
+
+            document.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowLeft") {
+                moveDodgerLeft();
+            }
+            });
+
+            var dodger = document.getElementById('dodger');
+
+            function moveDodgerLeft() {
+            var leftNumbers = dodger.style.left.replace('px', '');
+            var left = parseInt(leftNumbers, 10)
+            if (left > 0) {
+                dodger.style.left = `${left - 1}px`
+            }
+            }
+
+            function moveDodgerRight() {
+            var leftNumbers = dodger.style.left.replace('px', '');
+            var left = parseInt(leftNumbers, 10)
+            if (left < 360) {
+                dodger.style.left = `${left + 1}px`
+            }
+            }
+
+            document.addEventListener('keydown', function(e) {
+            if (e.key === "ArrowLeft") {
+                moveDodgerLeft()
+            }
+            })
+
+            document.addEventListener('keydown', function(e) {
+            if (e.key === "ArrowRight") {
+                moveDodgerRight()
+            }
+            })
 
 
     Git
@@ -3886,14 +3979,199 @@ phase0
         
         Intro to Version Control
         Git Basics
-        Getting Code with Git
-        Pushing Code with Git
 
+
+            mkdir my-git-project
+            cd my-git-project
+
+            Getting Code with Git
+            Pushing Code with Git
+            git init
+            Initialized empty Git repository in /Users/avi/my-git-project/.git/
+            git status
+            On branch main
+
+            No commits yet
+
+            nothing to commit (create/copy files and use "git add" to track)
+
+            touch README.md
+            ls
+            README.md
+
+            git status
+            On branch main
+
+            No commits yet
+
+            Untracked files:
+            ..." to include in what will be committed)
+
+            README.md
+
+            nothing added to commit but untracked files present (use `git add` to track)
+
+            git add README.md
+            git status
+            On branch main
+
+            No commits yet
+
+            Changes to be committed:
+            ..." to unstage)
+
+            new file:   README.md
+
+            git commit -m "Initial commit"
+
+            git commit -m "Initial commit"
+            [main (root-commit) e55477d] Initial commit
+            1 file changed, 0 insertions(+), 0 deletions(-)
+            create mode 100644 README.md
+
+            git status
+            On branch main
+            nothing to commit, working tree clean
+
+            git add README.md
+            git commit -m "Update README.md"
+
+            git add .
+
+            git commit -am "Update README.md"
+
+            git commit -a -m "Update README.md"
+
+            git commit -am "Update README.md"
+            [main (root-commit) e55477d] Update README.md
+            1 file changed, 4 insertions(+), 0 deletions(2)
+        Git code
+
+            git clone git@github.com:facebook/react.git
+            cd react
+            git remote
+            origin
+            git remote -v
+            origin  git@github.com:facebook/react.git (fetch)
+            origin  git@github.com:facebook/react.git (push)
+        pushing git
+
+            git remote add origin git@github.com:your-github-username/my-new-repo.git
+            git remote -v
+            View existing remotes
+            origin  git@github.com:your-github-username/my-new-repo.git (fetch)
+            origin  git@github.com:your-github-username/my-new-repo.git (push)
+
+            git branch --show-current
+
+            git push -u origin main
+    
     Project
 
         
         Software Engineering Prep Final Project Setup Part I: Setting Up Your Repo
+
+             mkdir my-personal-website
+             cd my-personal-website
+             git init
+             touch README.md
+             echo "# My Personal Website" >> README.
+             git status
+             On branch main
+
+            No commits yet
+
+            Untracked files:
+            ..." to include in what will be committed)
+            README.md
+
+            nothing added to commit but untracked files present (use "git add" to track)
+
+            git add README.md
+            git commit -m 'Initial commit'
+
+            "Branch 'main' set up to track remote branch 'main' from 'origin'."
+
+            git add .
+            git commit -m "Some meaningful commit message"
+            git push
+
+
         Software Engineering Prep Final Project Setup Part II: Hosting a Website on GitHub Pages
+
+            touch index.html
+            <!DOCTYPE html>
+            <html lang="en">
+            <head></head>
+            <body></body>
+            </html>
+
+            <head>
+            <title>My Personal Website</title>
+            </head>
+
+            <body>
+            <h1>Hello World!</h1>
+            </body>
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <title>My Personal Website</title>
+            </head>
+            <body>
+                <h1>Hello World!</h1>
+            </body>
+            </html>
+
+            git add index.html
+            git commit -m "create basic HTML file"
+            git push
+
+            touch style.css
+            body {
+            background: blue;
+            }
+
+            <head>
+            <link rel="stylesheet" href="style.css" />
+            <title>My Personal Website</title>
+            </head>
+
+            git add style.css
+            git add index.html
+            git commit -m "add style.css, connect to index.html"
+            git push
+
+            touch script.js
+
+            const h2 = document.createElement("h2");
+            h2.textContent = "This content added by JavaScript";
+
+            document.querySelector("body").appendChild(h2);
+
+            <script src="script.js"></script>
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <link rel="stylesheet" href="style.css" />
+                <title>My Personal Website</title>
+            </head>
+            <body>
+                <h1>Hello World!</h1>
+                <script src="script.js"></script>
+            </body>
+            
+            git add script.js
+            git add index.html
+            git commit -m "add script.js, connect to index.html"
+            git push
+            
+                            
+            
+
+
         Project: Build a Personal Website
 
 
