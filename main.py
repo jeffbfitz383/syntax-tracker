@@ -3509,12 +3509,369 @@ phase0
 
         
         Introduction to the DOM
+
+            window.innerHeight;
+            // returns the inner height of the browser window.
+
+            document.URL;
+            //=> https://en.wikipedia.org/wiki/Ada_Lovelace
+            document.querySelector("h1");
+            //=> Returns the element on the page with an id attribute equal to "firstHeading"
+
+
         DOM Editing Lab
+
+            <p>I am a paragraph.</p>
+            <main></main>
+            <body>
+            <main>
+                <p>I am a nested paragraph, inside the main element, inside the body!</p>
+            </main>
+            </body>
+
+            <img
+            src="https://media.giphy.com/media/3o6MbkZSYy4mI3gLYc/giphy.gif"
+            alt="A cartoon gif"
+            />
+
+            <img
+            src="https://media.giphy.com/media/3o6MbkZSYy4mI3gLYc/giphy.gif"
+            alt="A cartoon gif"
+            >
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <title>Introduction to the DOM Lab</title>
+            </head>
+            <body>
+                <!--All our work for this lesson will go here-->
+            </body>
+            </html>
+
+            <h1>My HTML adventure</h1>
+
+            <p>
+            We're writing HTML markup to display in our <strong>browser</strong>. We're
+            basically telling computers what to do. <em>Neat!</em>
+            </p>
+
+            We're writing
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> markup to
+            display in our <strong>browser</strong>.
+
+            <table>
+            <thead>
+                <tr>
+                <th>Element name</th>
+                <th>Display value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>h1</td>
+                <td>block</td>
+                </tr>
+                <tr>
+                <td>p</td>
+                <td>block</td>
+                </tr>
+                <tr>
+                <td>strong</td>
+                <td>inline</td>
+                </tr>
+                <tr>
+                <td>em</td>
+                <td>inline</td>
+                </tr>
+            </tbody>
+            </table>
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Introduction to the DOM Lab</title>
+            </head>
+            <body>
+            <h1>My HTML adventure</h1>
+            <p>
+                We're writing HTML markup to display in our <strong>browser</strong>.
+                We're basically telling computers what to do. <em>Neat!</em>
+                We're writing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> markup to display in our <strong>browser</strong>.
+            </p>
+            <table>
+                <thead>
+                <tr>
+                    <th>Element name</th>
+                    <th>Display value</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>h1</td>
+                    <td>block</td>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>block</td>
+                </tr>
+                <tr>
+                    <td>strong</td>
+                    <td>inline</td>
+                </tr>
+                <tr>
+                    <td>em</td>
+                    <td>inline</td>
+                </tr>
+                </tbody>
+            </table>
+            </body>
+            </html>
+
         Changing The DOM with DevTools and JavaScript
+
+            document.querySelector("h1");
+            <h1 id="firstHeading" class="firstHeading mw-first-heading">
+             ...
+            </h1>
+            document.querySelector("h1").remove();
+            const header = document.querySelector("h1");
+
         The DOM Is a Tree
+
+            document.querySelector(selector);
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>My Title</title>
+            </head>
+            <body>
+                <h1>A heading</h1>
+                <a href="http://example.com">Link text</a>
+            </body>
+            </html>
+
+            <body>
+            <div>
+                <p>Hi!</p>
+            </div>
+
+            <div>
+                <p>Bye!</p>
+            </div>
+            </body>
+
+            <div>
+            <div>
+                <h1>Hello!</h1>
+            </div>
+
+            <div>
+                <h5>Sup?</h5>
+            </div>
+            </div>
+
+            <div>
+            <h5 id="greeting">Hello!</h5>
+            </div>
+
+            <!-- the `className` attribute is called `class` in HTML  -->
+            <div>
+            <div class="banner">
+                <h1>Hello!</h1>
+            </div>
+
+            <div class="banner">
+                <h1>Sup?</h1>
+            </div>
+
+            <div class="banner">
+                <h5>Tinier heading</h5>
+            </div>
+            </div>
+
+            const elements = document.getElementsByClassName("yourClassNameHere");
+
+            <main>
+            <div>
+                <div>
+                <p>Hello!</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                <p>Hello!</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                <p>Hello!</p>
+                </div>
+            </div>
+            </main>
+
+            p.textContent = "Goodbye!";
+
+
+            const main = document.getElementsByTagName("main")[0];
+
+            const secondChild = main.children[1];
+
+            const p = secondChild.getElementsByTagName("p")[0];
+
         JavaScript Query Selector Methods
+
+            <body>
+                <div>Hello!</div>
+                <div>Goodbye!</div>
+            </body>
+
+            <body>
+            <div>
+                <ul class="ranked-list">
+                <li>1</li>
+                <li>
+                    <div>
+                    <ul>
+                        <li>2</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>3</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="unranked-list">
+                <li>6</li>
+                <li>2</li>
+                <li>
+                    <div>4</div>
+                </li>
+                </ul>
+            </div>
+            </body>
+
+            
+
+            const li2 = document.querySelector("ul.ranked-list li ul li");
+            li2;
+            //=> <li>2</li>
+
+            const div4 = document.querySelector("ul.unranked-list li div");
+            div4;
+            //=> <div>4</div>
+
+            <body>
+                <main id="app">
+                    <ul class="ranked-list">
+                    <li>1</li>
+                    <li>2</li>
+                    </ul>
+
+                    <ul class="ranked-list">
+                    <li>10</li>
+                    <li>11</li>
+                    </ul>
+                </main>
+            </body>
+
+            document.getElementById("app").querySelectorAll("ul.ranked-list li");
+      
+
+
+
         Creating and Inserting DOM Nodes Lab
-        Survey - Manipulating the DOM
+
+            const element = document.createElement("div");
+            
+            document.body.append(element);
+
+            const ul = document.createElement("ul");
+
+            for (let i = 0; i < 3; i++) {
+            const li = document.createElement("li");
+            li.textContent = (i + 1).toString();
+            ul.append(li);
+            }
+
+            element.append(ul);
+
+            <div>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+
+            li.textContent = "Hi there!";
+            // => <li>Hi there!</li>
+            console.log(li.textContent);
+            // => "Hi there!"
+
+
+            const main = document.getElementById("main");
+            main.innerHTML =
+            "<h1>Poodles!</h1><h3>An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a post-Frankfurt School Appropriationist Perspective</h3><p><em>By: Byron Q. Poodle, Esq., BA.</em></p>";
+
+            <main id="main">
+                <h1>Poodles!</h1>
+                <h3>
+                    An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a
+                    post-Frankfurt School Appropriationist Perspective
+                </h3>
+                <p><em>By: Byron Q. Poodle, Esq., BA.</em></p>
+                </main>
+
+
+                const element = document.getElementById("main");
+                element.style.height = "300px";
+                element.style.backgroundColor = "#27647B";
+
+                element.textContent = "You've changed what's on the screen!";
+
+                element.style.fontSize = "24px";
+                element.style.marginLeft = "30px";
+                element.style.lineHeight = 2;
+
+                element.className = "pet-listing dog";
+
+                <main id="main" class="pet-listing dog"></main>
+
+                element.classList.remove("dog");
+                element.classList.add("cat", "sale");
+
+                <main id="main" class="pet-listing cat sale"></main>
+
+                someElement.removeChild(someChildElement);
+
+                const ul = document.getElementsByTagName("ul")[0];
+                const secondChild = ul.querySelector("li:nth-child(2)");
+                ul.removeChild(secondChild);
+
+                ul.remove();
+
+                const testVar = "hi"
+
+                /* Enter the code to remove the node element here */
+                document.querySelector("main#main").remove();
+
+                /* Create your new element here and assign it to newHeader */
+                const newHeader = document.createElement("h1");
+                newHeader.id = "victory"
+                newHeader.innerHTML = "Flatiron School is the champion!";
+                newHeader.className = "victory";
+
+
+         Survey - Manipulating the DOM
 
     Events
 
