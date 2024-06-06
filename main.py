@@ -4203,6 +4203,37 @@ phase1
             const readBooks = (book1, book2) => `I read '${book1}' and '${book2}'`;
             readBooks("The Old Man and the Sea", "1984"); // "I read 'The Old Man and the Sea' and '1984'"
             const readBooks = book1, book2 =>  `I read '${book1}' and '${book2}'` // Syntax Error
+        Thinking in Types
+            function getName(person) {
+            return person.name;
+            }
+
+            function getAge(person) {
+            return person.age;
+            }
+
+            function makePerson(name, age) {
+            return {
+                name: name,
+                age: age
+            };
+            }
+
+            function birthday(person) {
+            person.age += 1;
+            return person;
+            }
+
+            // Point: {
+            // x: number
+            // y: number
+            // name: string
+            //}
+
+            function getDistance(pointA, pointB) {
+            return Math.sqrt((pointA.x - pointB.x) ** 2 + (pointA.y - pointB.y) ** 2);
+}
+
 
 phase2
 phase3
