@@ -4188,13 +4188,14 @@ phase1
             return "Playing some " + music;
             };
             playMusic("Jazz"); // "Playing some Jazz"
+            };
             const playMusic = (music) => {
             "Playing some " + music;
             };
             playMusic("Jazz"); // undefined
             const playMusic = (music) => "Playing some " + music;
-            playMusic("Jazz"); // "Playing some Jazz"
             const playMusic = music => "Playing some " + music;
+            playMusic("Jazz"); // "Playing some Jazz"
             playMusic("Jazz"); // "Playing some Jazz"
             const readBooks = (book1, book2) => {
             return `I read '${book1}' and '${book2}'`;
@@ -4210,13 +4211,12 @@ phase1
 
             function getAge(person) {
             return person.age;
-            }
 
             function makePerson(name, age) {
+            }
             return {
                 name: name,
                 age: age
-            };
             }
 
             function birthday(person) {
@@ -4232,8 +4232,71 @@ phase1
 
             function getDistance(pointA, pointB) {
             return Math.sqrt((pointA.x - pointB.x) ** 2 + (pointA.y - pointB.y) ** 2);
-}
+            }
+        Events
+            // index.html ...
 
+            <button id="notify">Click Me!</button>
+
+            <script src="https://raw.githubusercontent.com/learn-co-curriculum/fewpjs-discussion-questions-events/master/index.js"></script> 
+            // index.js
+
+            const button = document.getElementById("notify")
+            button.addEventListener('click', function(){
+            console.log("Printing a Message!")
+            }) 
+            Example 2
+            // index.html ...
+
+            <button id="notify">Click Me!</button>
+
+            <script src="https://raw.githubusercontent.com/learn-co-curriculum/fewpjs-discussion-questions-events/master/index.js"></script> 
+            // index.js
+
+            const button = document.getElementById("notify")
+            button.addEventListener('mouseover', function(){
+            console.log("Printing a Message!")
+            }) 
+            Example 3
+            // index.html ...
+            <script src="https://raw.githubusercontent.com/learn-co-curriculum/fewpjs-discussion-questions-events/master/index.js"></script>
+
+            <button id="notify">Click Me!</button>
+            
+            // index.js
+
+            const button = document.getElementById("notify")
+            button.addEventListener('mouseover', function(){
+            console.log("Printing a Message!")
+            }) 
+            Example 4
+            // index.html ...
+            <script src="https://raw.githubusercontent.com/learn-co-curriculum/fewpjs-discussion-questions-events/master/index.js"></script>
+
+            <button id="notify">Click Me!</button>
+            
+            // index.js
+            document.addEventListener("DOMContentLoaded", function(){
+            const button = document.getElementById("notify")
+            button.addEventListener('mouseover', function(){
+                console.log("Printing a Message!")
+            })
+            }); 
+            Example 5
+            Oops. Looks like this developer made some mistakes typing. Identify the mistakes.
+
+            // index.html ...
+            <script src="https://raw.githubusercontent.com/learn-co-curriculum/fewpjs-discussion-questions-events/master/index.js"></script>
+
+            <button id="notifiable">Click Me!</button>
+            
+            // index.js
+            document.addListenerEvent("DOMContentLoaded", function(){
+            const button = document.getElementById("notifliable")
+            button.addListenerEvent('click', function(){
+                console.log("Printing a Message!")
+            })
+            }); 
 
 phase2
 phase3
